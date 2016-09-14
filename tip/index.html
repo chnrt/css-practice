@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="x5-orientation" content="portrait">
+	<meta name="x5-fullscreen" content="true">
+	<meta name="x5-page-mode" content="app">
+	<title></title>
+
+	<style>
+		/* Neutralize styling: 
+		   Elements we want to clean out entirely: */
+		html, body, form, fieldset {
+			margin: 0;
+			padding: 0;
+			font: 100%/120% Verdana, Arial, Helvetica, sans-serif;
+		}
+		/* Neutralize styling: 
+		   Elements with a vertical margin: */
+		h1, h2, h3, h4, h5, h6, p, pre,
+		blockquote, ul, ol, dl, address {
+			margin: 1em 0;
+			padding: 0;
+		}
+		/* Apply left margin:
+		   Only to the few elements that need it: */
+		li, dd, blockquote {
+			margin-left: 1em;
+		}
+		/* Miscellaneous conveniences: */
+		form label {
+			cursor: pointer;
+		}
+		fieldset {
+			border: none;
+		}
+		input, select, textarea {
+			font-size: 100%;
+			font-family: inherit;
+		}
+		
+		.img-cover-center {
+			background-size: cover;
+			background-position: center;
+		}
+		article {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-image: url(images/bg1.jpg);
+		}
+		section.content {
+			position: absolute;
+			top: 77px;
+			bottom: 46px;
+			left: 12px;
+			right: 12px;
+			border: 3px solid #2abfc4;
+			border-radius: 12px;
+			background-color: #fff;
+		}
+		section.bottom {
+			position: absolute;
+			bottom: 0;
+			height: 86px;
+			width: 100%;
+			background-image: url(images/bg2.png);
+		}
+		.content-log {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 178px;
+			height: 153px;
+			background-image: url(images/logo.png);
+			transform: translate(-50%,-40%);
+			-webkit-transform: translate(-50%,-40%);
+		}
+		.content-text {
+			position: absolute;
+			top: 100px;
+			bottom: 10px;
+			left: 15px;
+			right: 15px;
+			overflow-y: auto;
+			color: #595757;
+			line-height: 1.4;
+		}
+		.red-text {
+			margin: 12px 0;
+			color: #ed3b45;
+		}
+
+		@media all and (min-width: 650px) {
+			article {
+				background-image: url(images/pc_bg.jpg);
+			}
+			section.content {
+				top: 0;
+				bottom: 0;
+				width: 590px;
+				height: 394px;
+				border: 6px solid #2abfc4;
+				border-radius: 25px;
+				background-color: #fff;
+				margin: auto;
+			}
+			section.bottom {
+				height: 156px;
+				background-image: url(images/pc_bg1.png);
+			}
+			.content-log {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				width: 253px;
+				height: 229px;
+				background-image: url(images/pc_logo.png);
+				transform: translate(-50%,-50%);
+				-webkit-transform: translate(-50%,-50%);
+			}
+			.content-text {
+				left: 30px;
+				right: 30px;
+			}
+			.red-text {
+				margin: 25px 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<article class="img-cover-center">
+		<section class="content">
+			<div class="content-log img-cover-center"></div>
+
+			<div class="content-text">
+				<div class="nomal-text">
+					亲爱的用户：<br/>
+					为了给广大的用户提供更加强大的性能和更加稳定的服务，我们将对服务器进行升级维护。维护期间您将无法使用，给您带来的不便请谅解！
+				</div>
+				<div class="red-text">
+					维护时间：20160914-20160916
+				</div>
+				<div class="nomal-text">
+					温馨提示：请广大用户提前做好准备，请勿在临近维护时间进行编辑应用、录入数据的操作，以免造成异常和不必要的损失。
+				</div>
+			</div>
+		</section>
+
+		<section class="bottom img-cover-center"></section>
+	</article>
+</body>
+</html>
